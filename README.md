@@ -24,7 +24,7 @@ This program can manage
   1. Has information like Book name, author name
   2. Keeps track of stock of the given Book
   3. Keeps track of dates the book stock was rented on
-###Library Class
+### Library Class
   1. Stores information about Library's name, address
   2. Keeps record of books registered in the library
   3. Calculates the fine by calculating the rentedDays(method in Date Class)
