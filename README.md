@@ -16,15 +16,15 @@ This program can manage
 //1. When you create a libr --->
 
 ## Major Components
-1. Date Class
+### Date Class
   1. Useful for calculating no_of_days a book has been rented for.
   2. For any fine if applicable.
   3. Keeping Track of the latest expected returning date of a book [Future Scope]
-2. Book Class
+### Book Class
   1. Has information like Book name, author name
   2. Keeps track of stock of the given Book
   3. Keeps track of dates the book stock was rented on
-3. Library Class
+###Library Class
   1. Stores information about Library's name, address
   2. Keeps record of books registered in the library
   3. Calculates the fine by calculating the rentedDays(method in Date Class)
