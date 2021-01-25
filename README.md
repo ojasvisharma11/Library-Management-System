@@ -1,6 +1,6 @@
 # Library-Management-System
 ## Instroduction
-In this In this project can build a Library Management System for renting books. The primary language you used is Javascript. 
+In this In this project can build a Library Management System for renting books. I have used Javascript as the primary language. 
 
 ## Functional Requirements
 This program can manage
@@ -11,5 +11,15 @@ This program can manage
 5. Requesting to Rent a book
 6. Returning Book
 7. Calculating the fine to be paid, if returned late
+
+## Design
+
+
+## Scopes for Improvement
+1. Use a different database for the Date stored for different libraries
+2. Explore different Object Oriented Programming Principles
+3. Create a waiting list for a specific books
+4. Implement it in Typescript
+5. Scope for Data Validation
 
 
