@@ -12,9 +12,8 @@ This program can manage
 6. Returning Book
 7. Calculating the fine to be paid, if returned late
 
-## Design
-1. When you create a library
-  1. 
+//## Design
+//1. When you create a libr
 
 ## Scopes for Improvement
 1. Use a different database for the Date stored for different libraries
