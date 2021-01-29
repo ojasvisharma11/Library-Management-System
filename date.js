@@ -1,18 +1,81 @@
 class Date{
+    static lower_year_limit = 2050
+    static upper_year_limit = 2000
     constructor(year, month, day){
         this.year = year
         this.month = month
         this.day = day
-        if(this.year == undefined){
-            console.log("Enter valid year")
+        this.valid = true
+        if(this.validate){
+            console.log("Data Not Stored")
+            return
         }
-        if(this.month == undefined){
+        console.log("Data saved!")
+    }
+    get isLeapYear(){
+        if(this.valid){
+            if(this.year%400 || (this.year%100!=0 && this.year%4==0)){
+                return true
+            }
+            return false
+        }
+        console.log("Not Valid Input")
+        return false
+    }
+    get no_of_days(){
+        if(this.valid){
+            if(this.month == 3 || this.month == 5 || this.month == 8 || this.month == 11){
+                return 30
+            }
+            if(this.month == 1){
+                if(this.isLeapYear){
+                    return 29
+                }
+                else  return 28
+            }
+            else  return 31
+        }
+        console.log("Not Valid Input")
+        return -1
+    }
+    get validate(){
+        if(this.year == undefined || this.year == null){
+            console.log("Enter valid year")
+            return false
+        }
+        if(typeof this.year != "number" || Number.isInteger(this.year) == false){
+            console.log("Enter valid year")
+            return false
+        }
+        if(this.year<Date.lower_year_limit || this.year > Date.upper_year_limit){
+            console.log("The allowed year range is", Date.lower_year_limit, "-", Date.upper_year_limit)
+            return false
+        }
+        
+        if(this.month == undefined || this.month == null){
             console.log("Enter valid Month")
         }
-        if(this.day == undefined){
-            console.log("Enter valid day")
+        if(typeof this.month != "number" || Number.isInteger(this.month) == false){
+            console.log("Enter valid month")
+            return false
         }
-    }
+        if(this.month < 1 || this.month > 12){
+            console.log("Month should be in range of 1 to 12")
+            return false
+        }
+        
+        if(this.day == undefined || this.day == null){
+            console.log("Enter valid day")
+            return false
+        }
+        var no_of_days = this.no_of_days
+        if(this.day < 1 || this.day > this.no_of_days){
+            console.log("Enter valid day")
+            return false
+        }
+        this.valid = true
+        return this.valid
+    }        
     get getYear(){
         return this.year
     }
