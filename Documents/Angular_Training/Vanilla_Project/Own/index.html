@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel = "stylesheet" href = "./style.css "/>
+</head>
+<body>
+    <h1>My Expenses</h1>
+    <form class = "form-input">
+        <label for="material-input">Material</label>
+        <input type = "text" class ="material-input" id = "material-input"> <br>
+        <label for="material-qty">Quantity</label>
+        <input type="number" class = "material-qty" id = "material-qty"><br>
+        <label for="material-cst">Cost Per Material</label>
+        <input type = "number" class = "material-cst" id = ",material-cst">
+        <button class = "material-submit" type = "submit">
+            <i class="fas fa-receipt"></i>
+        </button>
+    </form>
+    <div class="message" id = "message">
+    </div>
+    <div class="expenses-container">
+        <!-- <ul>
+            <div class = "heading">
+                <li>Material</li>
+                <li>Quantity</li>
+                <li>Cost</li>
+            </div>
+        </ul> -->
+        <ul class = "expenses"></ul>
+    </div>
+    <script src = "./app.js" ></script>
+</body>
+</html>
