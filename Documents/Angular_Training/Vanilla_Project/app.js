@@ -59,7 +59,7 @@ function deleteToDo(event){
         todo.addEventListener("transitionend", function(){
             todo.remove();
         });
-        todoList.appendChild(todo);
+        // todoList.appendChild(todo);
     }
 }
 
